@@ -322,7 +322,7 @@ h5.subtitle {
 }
 
 .bg-feature {
-    background-color: #B779A2;
+    background-color: #737373;
 }
 
 .bg-primary {
@@ -787,7 +787,7 @@ h5.subtitle {
     margin: 0 auto;
     border-radius: 100%;
     margin-bottom: 20px;
-    background: #B779A2;
+    background: #f6cfe9;
     border: 1px solid rgba(255,255,255,.2);
     color: #fff;
 }
