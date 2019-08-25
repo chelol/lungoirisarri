@@ -39,6 +39,15 @@ body {
     position: relative;
 }
 
+#div1 {
+    display: inline-block;
+}
+
+#div2 {
+    display: inline-block;
+}
+
+
 p {
     line-height: 28px;
     font-size: 15px;
