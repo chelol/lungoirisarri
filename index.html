@@ -2,6 +2,22 @@
 <html lang="zxx">
 
 <head>
+ 
+<!-- seo -->
+{{ if and (eq .Kind "taxonomy") (eq .Type "categories")}}
+<meta name="robots" content="noindex, follow"/>
+{{ else }}
+<meta name="robots" content="index, follow"/>
+{{ end }}
+{{ if or (eq .Kind "home") (eq .Kind "page")}}
+{{ if isset .Params "canonical" }}
+<link rel="canonical" href="{{ .Params.Canonical}}" />
+{{ else }}
+<link rel="canonical" href="{{ .Permalink}}" />
+{{ end }}
+{{ end }}    
+<!-- fin seo -->
+    
     <meta name="msvalidate.01" content="274957163A000AAC9126FDFD33731CBE" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
